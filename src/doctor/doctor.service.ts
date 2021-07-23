@@ -35,6 +35,7 @@ export class DoctorService {
     return doctors.map((doctor) => {
       return {
         id: doctor._id,
+        avatar: doctor.avatar,
         name: doctor.name,
         lastname: doctor.lastname,
         specialty: doctor.specialty,
@@ -57,6 +58,7 @@ export class DoctorService {
     });
     return {
       id: doctor._id,
+      avatar: doctor.avatar,
       name: doctor.name,
       lastname: doctor.lastname,
       specialty: doctor.specialty,

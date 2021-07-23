@@ -6,6 +6,7 @@ export interface IBusySchedule {
 
 export class GetByIdDoctorDto {
   id: string;
+  avatar: string;
   name: string;
   lastname: string;
   specialty: string;

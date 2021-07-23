@@ -6,6 +6,9 @@ export type DoctorDocument = Doctor & Document;
 @Schema()
 export class Doctor extends Document {
   @Prop({ required: true })
+  avatar: string;
+
+  @Prop({ required: true })
   name: string;
 
   @Prop({ required: true })

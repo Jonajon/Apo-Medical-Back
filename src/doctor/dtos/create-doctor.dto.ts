@@ -1,6 +1,9 @@
 import { IsNotEmpty } from 'class-validator';
 
 export class CreateDoctorDto {
+  @IsNotEmpty({ message: 'avatar: avatar es requerido' })
+  avatar: string;
+
   @IsNotEmpty({ message: 'name: name es requerido' })
   name: string;
 
